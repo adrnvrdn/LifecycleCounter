@@ -67,12 +67,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy () {
-        super.onDestroy();
-        Log.d(TAG, "onDESTROY");
-    }
-
-    @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("count", count);
